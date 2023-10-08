@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": [
+      "es7",
+      "dom"
+    ],
+    "rootDir": "src",
+    "outDir": "dist",
+    "moduleResolution": "node"
+  }
+}
