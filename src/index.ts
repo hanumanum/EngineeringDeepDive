@@ -10,4 +10,8 @@ simpleCalculationTests()
  */
 
 import { linkedListSimpleTests } from './02. DSAL/linkedlist/linked.list.tests';
-linkedListSimpleTests()
+import { testStackyQUeue } from './02. DSAL/queue.from.stack.ts/queue.stack.tests';
+//linkedListSimpleTests()
+
+
+testStackyQUeue()
