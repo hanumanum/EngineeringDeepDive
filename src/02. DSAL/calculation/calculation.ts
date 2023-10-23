@@ -1,4 +1,4 @@
-import { Stack } from "../stack/stack.array.class"
+import { Stack } from "../Stack/stack.array.class"
 
 const add = (a: number, b: number): number => a + b
 const subtract = (a: number, b: number): number => a - b

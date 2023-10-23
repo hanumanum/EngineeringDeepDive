@@ -1,4 +1,4 @@
-import { Stack } from "../stack/stack.array.class";
+import { Stack } from "../Stack/stack.array.class";
 
 
 export class StackyQueue<T> {

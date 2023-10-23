@@ -1,5 +1,5 @@
 import { IStack } from "./interface.stack";
-import { LinkedList } from "../linkedlist/linked.list.class";
+import { LinkedList } from "../LinkedList/linked.list.class";
 
 export class Stack<T> implements IStack<T> {
     private itemsList: LinkedList<T> = null;
