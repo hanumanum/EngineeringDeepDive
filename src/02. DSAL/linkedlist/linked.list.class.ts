@@ -115,7 +115,7 @@ export class LinkedList<T> {
         return arr;
     }
 
-    print(): string {
+    toString(): string {
         const output = this.toArray().join(",")
         return output
     }

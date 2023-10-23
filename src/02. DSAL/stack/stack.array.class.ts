@@ -1,10 +1,4 @@
-interface IStack<T> {
-    pop(): T;
-    push(item: T): void;
-    top(): T;
-    empty(): boolean;
-    clear(): void;
-}
+import { IStack } from "./interface.stack";
 
 export class Stack<T> implements IStack<T> {
     private items: T[] = [];
@@ -24,7 +18,7 @@ export class Stack<T> implements IStack<T> {
         return this.items[this.items.length - 1];
     }
 
-    empty(): boolean {
+    isEmpty(): boolean {
         return this.items.length === 0;
     }
 
@@ -32,8 +26,8 @@ export class Stack<T> implements IStack<T> {
         this.items = [];
     }
 
-    log(): void {
-        console.log(this.items);
+    toString(): string {
+        return this.items.toString();
     }
 
 }

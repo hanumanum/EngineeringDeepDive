@@ -1,4 +1,4 @@
-import { Stack } from "../stack/stack.class"
+import { Stack } from "../stack/stack.array.class"
 
 const add = (a: number, b: number): number => a + b
 const subtract = (a: number, b: number): number => a - b
@@ -62,7 +62,7 @@ export const toPostfix = (expressionInfix: string): string => {
 
     }
 
-    while (!stack.empty()) {
+    while (!stack.isEmpty()) {
         expressionFostfix += " " + stack.pop()
     }
 

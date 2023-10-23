@@ -1,4 +1,4 @@
-import { Stack } from "../stack/stack.class";
+import { Stack } from "../stack/stack.array.class";
 
 
 export class StackyQueue<T> {
@@ -11,14 +11,14 @@ export class StackyQueue<T> {
     }
 
     enqueue(value: T) {
-        while(!this.stack2.empty()) {
+        while(!this.stack2.isEmpty()) {
             this.stack1.push(this.stack2.pop())
         }
         this.stack1.push(value)
     }
 
     dequeue(): T {
-        while(!this.stack1.empty()) {
+        while(!this.stack1.isEmpty()) {
             this.stack2.push(this.stack1.pop())
         }
         
